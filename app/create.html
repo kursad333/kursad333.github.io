@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    
+    
+    <title>Dokkie</title>
+  <script type="module" crossorigin src="../assets/app_6-41ebeee7.js"></script>
+  <link rel="modulepreload" crossorigin href="../assets/AuthService-961c522c.js">
+  <link rel="modulepreload" crossorigin href="../assets/EventDB-ba80c814.js">
+  <link rel="modulepreload" crossorigin href="../assets/ParticipantDB-fb99b23b.js">
+  <link rel="stylesheet" href="../assets/global-326eeeb1.css">
+  <link rel="stylesheet" href="../assets/app-e25613ea.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <h2 class="nav-logo" id="logoutDebug">Dokkie</h2>
+                <ul class="nav-links">
+                    <li><a href="./">Uitjes</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+                <button class="btn-nav-login"><a href="#">Nieuw uitje</a></button>
+            </nav>
+        </div>
+    </header>
+    <main class="app-wrapper">
+        <svg class="app-divider" xmlns="http://www.w3.org/2000/svg" viewBox="0 96 1440 224">
+            <path fill="#eaf6f6" fill-opacity="1"
+                  d="M0,96L60,117.3C120,139,240,181,360,197.3C480,213,600,203,720,192C840,181,960,171,1080,165.3C1200,160,1320,160,1380,160L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+            <text x="720" y="280" text-anchor="middle">Nieuw uitje</text>
+        </svg>
+        <section class="container app-container width-50">
+            <form class="create-event">
+                <label for="eventName">Beschrijving</label>
+                <input type="text" id="eventName">
+                <label for="searchInput">Deelnemers</label>
+                <span class="form-input-group">
+                    <input type="text" id="searchInput">
+                    <button id="searchUser">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"
+                             fill="#ffffff">
+                            <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
+                        </svg>
+                    </button>
+                </span>
+                <div class="participants-deck" id="participantsDeck"></div>
+                <hr class="divider-black">
+                <span id="actionFeedback"></span>
+                <button class="btn-create-confirm" id="createEvent">
+                    Maak aan
+                </button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

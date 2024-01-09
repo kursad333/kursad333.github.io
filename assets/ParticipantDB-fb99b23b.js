@@ -1,0 +1,2 @@
+import{i as o}from"./AuthService-961c522c.js";async function i(e,n){const a="INSERT INTO `participant`(`eventId`, `name`, `userId`) VALUES (?, ?, ?);";let r=[];for(let s of n)try{const t=await o.queryDatabase(a,e,s.name,s.userId);r.push(t)}catch(t){return console.log(t),t}return r}async function p(e){const n="SELECT p.* FROM participant p WHERE p.eventId = ?";try{return o.queryDatabase(n,e)}catch(a){return console.log(a),a}}export{i as a,p as d};
+//# sourceMappingURL=ParticipantDB-fb99b23b.js.map
